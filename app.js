@@ -1,4 +1,4 @@
-var score = document.getElementById("score");
+// var score = document.getElementById("score");
 var s; // short for snake
 var scl = 20; // short for scale
 var food;
@@ -8,7 +8,7 @@ function setup() {
   s = new Snake();
   frameRate(8); // slows the snake down to normal speed
   pickLocation();
-  updateCount();
+  // updateCount();
 }
 
 function draw() {
@@ -50,7 +50,7 @@ function mousePressed() {
   s.total++;
 }
 
-function updateCount() {
-  score.innerHTML = score + 1;
-  console.log((score.innerHTML = score.length));
-}
+// function updateCount() {
+//   score.innerHTML = score + 1;
+//   console.log((score.innerHTML = score.length));
+// }
